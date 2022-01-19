@@ -39,6 +39,9 @@
                 </div>
             </div>
         </nav>
+        <section class="content">
+            
+        </section>
     </main>
 
     <script src="js/bootstrap.bundle.min.js"></script>
