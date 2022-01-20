@@ -9,4 +9,4 @@ $path = $_SERVER['PATH_INFO'] ?? $_SERVER['REQUEST_URI'];
 $controllerClass = $routes[$path];
 
 $controller = new $controllerClass();
-$controller->processRequest();
+$controller->handle();

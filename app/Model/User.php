@@ -4,7 +4,7 @@ namespace App\Model;
 
 use App\Database\Connection;
 
-class Usuario
+class User
 {
     private $id;
     private $nome;
@@ -20,14 +20,17 @@ class Usuario
         $this->connection = $db->getConn();
     }
 
+    public function __set($attr, $value){
+        $this->$attr = $value;
+    }
+
     public function selectByEmailAndPassword()
     {
         try { 
-            $query = "SELECT * FROM usuarios where `login` = :login and `senha` = :senha";
+            $query = "SELECT * FROM usuarios where `email` = :email and `senha` = :senha";
 
-            $stmt = new $this->connection->prepare($query);
-
-            $stmt->bindValue(':login', $this->login);
+            $stmt = $this->connection->prepare($query);
+            $stmt->bindValue(':email', $this->email);
             $stmt->bindValue(':senha', $this->senha);
             $stmt->execute();
 
