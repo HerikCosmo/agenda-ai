@@ -20,7 +20,7 @@ class Usuario
         $this->connection = $db->getConn();
     }
 
-    public function getUser()
+    public function selectByEmailAndPassword()
     {
         try { 
             $query = "SELECT * FROM usuarios where `login` = :login and `senha` = :senha";
