@@ -1,15 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php require __DIR__ . '/../start-html.php'; ?>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AgendaAí - Lista</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-</head>
-
-<body>
     <main>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container">
@@ -40,11 +30,7 @@
             </div>
         </nav>
         <section class="content">
-            
+
         </section>
     </main>
-
-    <script src="js/bootstrap.bundle.min.js"></script>
-</body>
-
-</html>
+<?php require __DIR__ . '/../end-html.php'; ?>
