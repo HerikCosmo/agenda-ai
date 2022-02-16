@@ -26,11 +26,18 @@ class LoginForm implements HandleInterface
         $user = UserController::getUser($email, $senha);
         
         if($user === false){
-            echo 'Usuário não encontrado';
+            $_SESSION['ERROR'] = 'Usuário não encontrado';
+            header('location: /login');
             exit;
         }
 
-        echo 'logado';
-        
+        $_SESSION['LOGGED'] = 1;
+        $_SESSION['USER'] = [
+            'id' => $user->id,
+            'name' => $user->nome
+        ];
+
+        header('location: /');
+        exit;
     }
 }

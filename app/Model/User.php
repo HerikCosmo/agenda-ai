@@ -24,6 +24,22 @@ class User
         $this->$attr = $value;
     }
 
+    public function insert(){
+        try{
+            $query = "INSERT INTO usuarios(nome, email, senha) VALUES(:nome, :email, :senha); ";
+
+            $stmt = $this->connection->prepare($query);
+            $stmt->bindValue(':nome', $this->nome);
+            $stmt->bindValue(':email', $this->email);
+            $stmt->bindValue(':senha', $this->senha);
+
+            $stmt->execute();
+        }catch(\PDOException $e){
+            echo $e->getMessage();
+            exit;
+        }
+    }
+
     public function selectByEmailAndPassword()
     {
         try { 
