@@ -14,5 +14,6 @@ return [
     '/contato-edicao' => App\Controller\ContactEditController::class,
     '/contato-editar' => App\Controller\ContactUpdateController::class,
     
+    '/contato-excluir' => App\Controller\ContactDestroyController::class
 
 ];

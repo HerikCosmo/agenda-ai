@@ -5,7 +5,7 @@
     <?php foreach($contatos as $contato){ ?>
         <?php echo $contato->nome ?> |
         <a href="/contato-edicao?id=<?php echo $contato->id ?>">Editar</a> |
-        <a href="/contato-exclusao?id=<?php echo $contato->id ?>">Excluir</a>
+        <a href="/contato-excluir?id=<?php echo $contato->id ?>">Excluir</a>
         <br>        
     <?php } ?> 
 </main>

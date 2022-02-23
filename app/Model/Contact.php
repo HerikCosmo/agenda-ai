@@ -98,4 +98,19 @@ class Contact
             exit;
         }
     }
+
+    public function delete()
+    {
+        try {
+            $query = "DELETE FROM contatos where id = :id";
+
+            $stmt = $this->connection->prepare($query);
+            $stmt->bindValue(":id", $this->id);
+
+            $stmt->execute();
+        } catch (\PDOException $e) {
+            echo $e->getMessage();
+            exit;
+        }
+    }
 }
