@@ -10,6 +10,9 @@ return [
     '/logout' => App\Controller\LoginLogoutController::class,
     
     '/contato-cadastro' => App\Controller\ContactCreateController::class,
-    '/contato-cadastrar' => App\Controller\ContactSaveController::class
+    '/contato-cadastrar' => App\Controller\ContactSaveController::class,
+    '/contato-edicao' => App\Controller\ContactEditController::class,
+    '/contato-editar' => App\Controller\ContactUpdateController::class,
+    
 
 ];

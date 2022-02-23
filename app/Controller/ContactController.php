@@ -13,6 +13,16 @@ class ContactController
 
         $contact->setIdUsuario($id_usuario);
 
-        return $contact->getAllByUser();
+        return $contact->selectAllByUser();
+    }
+
+    public static function searchById(){
+        $contact = new Contact();
+
+        $id = filter_input(INPUT_GET, 'id', FILTER_SANITIZE_NUMBER_INT);
+
+        $contact->__set('id', $id);
+
+        return $contact->selectById();
     }
 }

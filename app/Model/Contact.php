@@ -20,10 +20,10 @@ class Contact
         $this->connection = $db->getConn();
     }
 
-    public function getAllByUser()
+    public function selectAllByUser()
     {
         try {
-            $query = "SELECT * FROM contatos where id_usuario = :id_usuario";
+            $query = "SELECT * FROM contatos where id_usuario = :id_usuario order by nome asc";
 
             $stmt = $this->connection->prepare($query);
             $stmt->bindValue(':id_usuario', $this->id_usuario);
@@ -56,6 +56,41 @@ class Contact
             $stmt->bindValue(":email", $this->email);
             $stmt->bindValue(":phone", $this->telefone);
             $stmt->bindValue(":id_usuario", $this->id_usuario);
+
+            $stmt->execute();
+        } catch (\PDOException $e) {
+            echo $e->getMessage();
+            exit;
+        }
+    }
+
+    public function selectById()
+    {
+        try {
+            $query = "SELECT * FROM contatos where id = :id";
+
+            $stmt = $this->connection->prepare($query);
+            $stmt->bindValue(":id", $this->id);
+
+            $stmt->execute();
+
+            return $stmt->fetch(\PDO::FETCH_OBJ);
+        } catch (\PDOException $e) {
+            echo $e->getMessage();
+            exit;
+        }
+    }
+
+    public function update()
+    {
+        try {
+            $query = "UPDATE contatos set nome = :nome, email = :email, telefone = :phone where id = :id";
+
+            $stmt = $this->connection->prepare($query);
+            $stmt->bindValue(":nome", $this->nome);
+            $stmt->bindValue(":email", $this->email);
+            $stmt->bindValue(":phone", $this->telefone);
+            $stmt->bindValue(":id", $this->id);
 
             $stmt->execute();
         } catch (\PDOException $e) {
