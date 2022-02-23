@@ -2,7 +2,7 @@
 
 namespace App\Controller;
 
-class LoginForm implements HandleInterface
+class LoginAuthController implements HandleInterface
 {
     public function handle(): void
     {

@@ -4,14 +4,14 @@ namespace App\Controller;
 
 use App\Helper\RenderViewTrait;
 
-class ListarContatosController implements handleInterface
+class IndexController implements handleInterface
 {
     use RenderViewTrait;
 
     public function handle(): void
     {
 
-        echo $this->renderView('/agenda/listar-contatos.php', [
+        echo $this->renderView('/agenda/index.php', [
             'contatos' =>  ContactController::getAllContacts()
         ]);
     }

@@ -4,7 +4,7 @@ namespace App\Controller;
 
 use App\Model\User;
 
-class CadastroUsuario implements HandleInterface
+class LoginSaveController implements HandleInterface
 {
     public function handle(): void
     {

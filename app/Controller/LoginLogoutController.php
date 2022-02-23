@@ -2,7 +2,7 @@
 
 namespace App\Controller;
 
-class Logout implements HandleInterface
+class LoginLogoutController implements HandleInterface
 {
     public function handle(): void
     {

@@ -4,12 +4,12 @@ namespace App\Controller;
 
 use App\Helper\RenderViewTrait;
 
-class CadastrarUsuario implements HandleInterface
+class LoginCreateController implements HandleInterface
 {
     use RenderViewTrait;    
 
     public function handle(): void
     {
-        echo $this->renderView('/login/cadastrar.php');
+        echo $this->renderView('/login/create.php');
     }
 }

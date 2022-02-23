@@ -18,7 +18,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Cadastrar</a>
+                            <a class="nav-link" href="/contato-cadastro">Cadastrar</a>
                         </li>
                     </ul>
                     <ul class="navbar-nav">
