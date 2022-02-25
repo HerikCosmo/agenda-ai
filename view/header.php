@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,9 +8,10 @@
     <title>AgendaAí - Lista</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
-<body>
-    <?php if(isset($_SESSION['LOGGED'])): ?>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+<body style="height: 100vh" class="bg-dark bg-opacity-75">
+    <?php if (isset($_SESSION['LOGGED'])) : ?>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container">
                 <a class="navbar-brand" href="/">AgendaAí</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,5 +36,4 @@
                 </div>
             </div>
         </nav>
-        <?php endif; ?>
-        <main>
+    <?php endif; ?>

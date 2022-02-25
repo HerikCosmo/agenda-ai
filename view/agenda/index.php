@@ -1,4 +1,4 @@
-<?php require __DIR__ . '/../start-html.php'; ?>
+<?php require __DIR__ . '/../header.php'; ?>
 
 <main>
     <?php echo $_SESSION['mensagem'] ?? '' ?>
@@ -9,4 +9,4 @@
         <br>        
     <?php } ?> 
 </main>
-<?php require __DIR__ . '/../end-html.php'; ?>
+<?php require __DIR__ . '/../footer.php'; ?>

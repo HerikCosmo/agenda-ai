@@ -1,4 +1,4 @@
-<?php require __DIR__ . '/../start-html.php'; ?>
+<?php require __DIR__ . '/../header.php'; ?>
 
 <main>
     <form action="/contato-cadastrar" method="post">
@@ -8,4 +8,4 @@
         <button type="submit">Enviar</button>
     </form>
 </main>
-<?php require __DIR__ . '/../end-html.php'; ?>
+<?php require __DIR__ . '/../footer.php'; ?>

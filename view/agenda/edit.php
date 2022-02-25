@@ -1,4 +1,4 @@
-<?php require __DIR__ . '/../start-html.php'; ?>
+<?php require __DIR__ . '/../header.php'; ?>
 editar
 <main>
     <form action="/contato-editar" method="post">
@@ -9,4 +9,4 @@ editar
         <button type="submit">Enviar</button>
     </form>
 </main>
-<?php require __DIR__ . '/../end-html.php'; ?>
+<?php require __DIR__ . '/../footer.php'; ?>

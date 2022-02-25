@@ -1,18 +1,37 @@
-<?php require __DIR__ . '/../start-html.php'; ?>
-<h1>a</h1>
-<main class="container">
-    <div class="row">
-        <div class="card">
-            <div class="card-header">Cadastrar</div>
-            <card class="card-body">
-                <form action="/login-cadastro-usuario" method="POST">
-                    <label for="nome">nome: </label><input type="text" name="nome" id="nome">
-                    <label for="email">email: </label><input type="email" name="email" id="email">
-                    <label for="senha">senha: </label><input type="password" name="senha" id="senha">
-                    <input type="submit" value="Enviar">
-                </form>
-            </card>
+<?php require __DIR__ . '/../header.php'; ?>
+<main>
+    <h3 class="text-center text-white py-5">AgendaAí</h3>
+    <div class="container">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-md-6">
+                <div class="card bg-light">
+                    <div class="card-header">
+                        <h4>Cadastrar</h4>
+                    </div>
+                    <div class="card-body">
+                        <form method="POST" id="formCadastroAgenda" action="/login-cadastro-usuario">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Nome</label>
+                                <input type="text" class="form-control" id="name" name="nome">
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" name="email">
+                            </div>
+                            <div class="mb-3">
+                                <label for="senha" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="senha" name="senha">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="card-footer d-flex justify-content-end">
+                        <button type="submit" form="formCadastroAgenda" class="btn btn-primary">Entrar</button>
+                    </div>
+                </div>
+                <p class="text-light">Já possui uma conta? <a href="/" class="link-light">Faça Login</a></p>
+            </div>
         </div>
     </div>
 </main>
-<?php require __DIR__ . '/../end-html.php'; ?>
+
+<?php require __DIR__ . '/../footer.php'; ?>
