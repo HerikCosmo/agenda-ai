@@ -40,7 +40,7 @@ editar
                         </form>
                     </div>
                     <div class="card-footer d-flex justify-content-end">
-                        <button type="submit" form="formCadastroAgenda" class="btn btn-primary">Entrar</button>
+                        <button type="submit" form="formCadastroAgenda" class="btn btn-primary">Editar</button>
                     </div>
                 </div>
                 <p class="text-light"><a href="/" class="link-light">Voltar</a></p>
