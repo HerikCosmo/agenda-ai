@@ -26,7 +26,7 @@ class LoginAuthController implements HandleInterface
         $user = UserController::getUser($email, $senha);
         
         if($user === false){
-            $_SESSION['ERROR'] = 'Usuário não encontrado';
+            $_SESSION['ERROR'] = 'Email e/ou senha inválido(s). Por favor, tente novamente.';
             header('location: /login');
             exit;
         }

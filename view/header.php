@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 
-<body style="height: 100vh" class="bg-dark bg-opacity-75">
+<body class="bg-dark bg-opacity-75">
     <?php if (isset($_SESSION['LOGGED'])) : ?>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container">

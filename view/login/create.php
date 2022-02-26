@@ -6,7 +6,7 @@
             <div class="col-md-6">
                 <div class="card bg-light">
                     <div class="card-header">
-                        <h4>Cadastrar</h4>
+                        <h4>Cadastrar usuário</h4>
                     </div>
                     <div class="card-body">
                         <form method="POST" id="formCadastroAgenda" action="/login-cadastro-usuario">
