@@ -13,9 +13,9 @@ class ContactEditController implements HandleInterface
     {
         $contact = ContactController::searchById();
 
-        if($contact === null){
+        if(empty($contact)){
             header("location: /");
-            exit;
+            exit; 
         }
 
         echo $this->renderView('/agenda/edit.php', [
