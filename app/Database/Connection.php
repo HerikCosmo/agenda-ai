@@ -2,6 +2,8 @@
 
 namespace App\Database;
 
+use App\Addon\DotEnv;
+
 class Connection
 {
     private static $driver;
@@ -13,11 +15,12 @@ class Connection
 
     public function __construct()
     {  
-        self::$driver = 'mysql';
-        self::$host = 'localhost';
-        self::$dbName = 'agenda_contatos';
-        self::$user = 'root';
-        self::$pass = 'root';
+        (new DotEnv(__DIR__.'/../../.env'))->load();
+        self::$driver = getenv('DB_DRIVER');
+        self::$host = getenv('DB_HOST');
+        self::$dbName = getenv('DB_NAME');
+        self::$user = getenv('DB_USER');
+        self::$pass = getenv('DB_PASS');
 
         try {
             $stringConnection = self::$driver.':host='.self::$host.';dbname='.self::$dbName;
