@@ -2,7 +2,7 @@
 
 namespace App\Database;
 
-use App\Addon\DotEnv;
+use Dotenv\Dotenv;
 
 class Connection
 {
@@ -15,12 +15,14 @@ class Connection
 
     public function __construct()
     {  
-        (new DotEnv(__DIR__.'/../../.env'))->load();
-        self::$driver = getenv('DB_DRIVER');
-        self::$host = getenv('DB_HOST');
-        self::$dbName = getenv('DB_NAME');
-        self::$user = getenv('DB_USER');
-        self::$pass = getenv('DB_PASS');
+        $dotenv = Dotenv::createImmutable(__DIR__.'/../../');
+        $dotenv->load();
+        
+        self::$driver = $_ENV['DB_DRIVER'];
+        self::$host = $_ENV['DB_HOST'];
+        self::$dbName = $_ENV['DB_NAME'];
+        self::$user = $_ENV['DB_USER'];
+        self::$pass = $_ENV['DB_PASS'];
 
         try {
             $stringConnection = self::$driver.':host='.self::$host.';dbname='.self::$dbName;
