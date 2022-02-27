@@ -40,6 +40,21 @@ class User
         }
     }
 
+    public function selectEmail(){
+        try{
+            $query = "SELECT * from usuarios WHERE email = :email; ";
+
+            $stmt = $this->connection->prepare($query);
+            $stmt->bindValue(':email', $this->email);
+
+            $stmt->execute();
+            return $stmt->fetch(\PDO::FETCH_OBJ);
+        }catch(\PDOException $e){
+            echo $e->getMessage();
+            exit;
+        }
+    }
+
     public function selectByEmailAndPassword()
     {
         try { 

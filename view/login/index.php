@@ -4,17 +4,11 @@
     <div class="container">
         <div class="row justify-content-center align-items-center">
             <div class="col-md-6">
-                <?php if (isset($_SESSION['ERROR']) && $_SESSION !== null) : ?>
-                    <div class="alert alert-danger">
-                        <?php echo $_SESSION['ERROR'] ?>
+                <?php if (isset($_SESSION['ALERT'])) : ?>
+                    <div class="alert alert-<?php echo $_SESSION['ALERT']['bg'] ?> my-2">
+                        <?php echo $_SESSION['ALERT']['message'] ?>
                     </div>
-                <?php unset($_SESSION['ERROR']);
-                endif; ?>
-                <?php if (isset($_SESSION['MESSAGE']) && $_SESSION !== null) : ?>
-                    <div class="alert alert-success my-2">
-                        <?php echo $_SESSION['MESSAGE'] ?>
-                    </div>
-                <?php unset($_SESSION['MESSAGE']);
+                <?php unset($_SESSION['ALERT']);
                 endif; ?>
                 <div class="card bg-light">
                     <div class="card-header">

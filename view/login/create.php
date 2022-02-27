@@ -19,13 +19,13 @@
                                 <input type="email" class="form-control" id="email" name="email">
                             </div>
                             <div class="mb-3">
-                                <label for="senha" class="form-label">Password</label>
+                                <label for="senha" class="form-label">Senha</label>
                                 <input type="password" class="form-control" id="senha" name="senha">
                             </div>
                         </form>
                     </div>
                     <div class="card-footer d-flex justify-content-end">
-                        <button type="submit" form="formCadastroAgenda" class="btn btn-primary">Entrar</button>
+                        <button type="submit" form="formCadastroAgenda" class="btn btn-primary">Cadastrar</button>
                     </div>
                 </div>
                 <p class="text-light">Já possui uma conta? <a href="/" class="link-light">Faça Login</a></p>
