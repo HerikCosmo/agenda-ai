@@ -5,7 +5,7 @@ namespace App\Controller;
 use App\Helper\RenderViewTrait;
 use App\Model\Contact;
 
-class ContactEditController implements handleInterface
+class ContactEditController implements HandleInterface
 {
     use RenderViewTrait;
 

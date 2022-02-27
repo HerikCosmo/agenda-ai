@@ -4,7 +4,7 @@ namespace App\Controller;
 
 use App\Helper\RenderViewTrait;
 
-class IndexController implements handleInterface
+class IndexController implements HandleInterface
 {
     use RenderViewTrait;
 
