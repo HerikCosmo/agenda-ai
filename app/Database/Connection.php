@@ -15,8 +15,10 @@ class Connection
 
     public function __construct()
     {  
-        $dotenv = Dotenv::createImmutable(__DIR__.'/../../');
-        $dotenv->load();
+        if(is_file(__DIR__.'/../../.env')){
+            $dotenv = Dotenv::createImmutable(__DIR__.'/../../');
+            $dotenv->load();
+        }
         
         self::$driver = $_ENV['DB_DRIVER'];
         self::$host = $_ENV['DB_HOST'];
