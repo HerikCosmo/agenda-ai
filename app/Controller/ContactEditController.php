@@ -11,7 +11,14 @@ class ContactEditController implements HandleInterface
 
     public function handle(): void
     {
-        $contact = ContactController::searchById();
+        $contact = new Contact();
+
+        $id = filter_input(INPUT_GET, 'id', FILTER_SANITIZE_NUMBER_INT);
+
+        $contact->__set('id', $id);
+        $contact->__set('id_usuario', $_SESSION['USER']['id']);
+
+        $contact = $contact->selectById();
 
         if(empty($contact)){
             header("location: /");

@@ -67,10 +67,11 @@ class Contact
     public function selectById()
     {
         try {
-            $query = "SELECT * FROM contatos where id = :id";
+            $query = "SELECT * FROM contatos where id = :id and id_usuario = :id_usuario";
 
             $stmt = $this->connection->prepare($query);
             $stmt->bindValue(":id", $this->id);
+            $stmt->bindValue(":id_usuario", $this->id_usuario);
 
             $stmt->execute();
 
@@ -102,10 +103,11 @@ class Contact
     public function delete()
     {
         try {
-            $query = "DELETE FROM contatos where id = :id";
+            $query = "DELETE FROM contatos where id = :id and id_usuario = :id_usuario";
 
             $stmt = $this->connection->prepare($query);
             $stmt->bindValue(":id", $this->id);
+            $stmt->bindValue(":id_usuario", $this->id_usuario);
 
             $stmt->execute();
         } catch (\PDOException $e) {
