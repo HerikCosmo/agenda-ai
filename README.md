@@ -11,12 +11,12 @@
 
   <img alt="Repository size" src="https://img.shields.io/github/repo-size/HerikCosmo/agenda-ai">
 
-  <a href="https://github.com/tgmarinho/nlw1/commits/master">
+  <a href="https://github.com/HerikCosmo/agenda-ai/commits/master">
     <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/HerikCosmo/agenda-ai">
   </a>
 
   <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen">
-   <a href="https://github.com/tgmarinho/nlw1/stargazers">
+   <a href="https://github.com/HerikCosmo/agenda-ai/stargazers">
     <img alt="Stargazers" src="https://img.shields.io/github/stars/HerikCosmo/agenda-ai?style=social">
   </a>
 </p>
