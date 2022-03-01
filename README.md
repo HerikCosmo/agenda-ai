@@ -11,14 +11,12 @@
 
   <img alt="Repository size" src="https://img.shields.io/github/repo-size/HerikCosmo/agenda-ai">
 
-  <a href="https://github.com/tgmarinho/nlw1/commits/master">
+  <a href="https://github.com/HerikCosmo/agenda-ai/commits/master">
     <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/HerikCosmo/agenda-ai">
   </a>
 
   <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen">
-   <a href="https://github.com/tgmarinho/nlw1/stargazers">
-    <img alt="Stargazers" src="https://img.shields.io/github/stars/HerikCosmo/agenda-ai?style=social">
-  </a>
+
 </p>
 
 
@@ -92,6 +90,8 @@ $ php -S localhost:8000 -t public
 Este projeto esta sobe a licença MIT.
 
 Feito por [Herik Cosmo](https://www.linkedin.com/in/herik-martins-3194b4208/)
+
+README.md baseado em: [Ecoleta](https://github.com/tgmarinho/Ecoleta/blob/master/README.md)
 
 [php]: https://www.php.net/
 [composer]: https://getcomposer.org/
