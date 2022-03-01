@@ -35,6 +35,17 @@ Projeto desenvolvido com PHP, utilizando a estrutura MVC.
   <img alt="AgendaAiWeb" title="#AgendaAiWeb" src="./assets/web.png" width="400px">
 </p>
 
+### Tela de Login
+<p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
+  <img alt="AgendaAiLogin" title="#AgendaAiLogin" src="./assets/login.png" width="400px">
+</p>
+
+### Mobile
+
+<p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
+  <img alt="AgendaAiMobile" title="#AgendaAiMobile" src="./assets/mobile.png" width="200px">
+</p>
+
 ## 🛠 Tecnologias
 
 As seguintes ferramentas foram usadas na construção do projeto:
