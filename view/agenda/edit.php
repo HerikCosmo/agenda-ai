@@ -1,18 +1,4 @@
-<!-- <?php require __DIR__ . '/../header.php'; ?>
-editar
-<main>
-    <form action="/contato-editar" method="post">
-        <input type="hidden" name="id" value="<?php echo $contact->id ?>">
-        <input type="text" placeholder="Nome" name="name" value="<?php echo $contact->nome ?>">
-        <input type="email" name="email" id="email" value="<?php echo $contact->email ?>">
-        <input type="tel" name="phone" id="phone" value="<?php echo $contact->telefone ?>">
-        <button type="submit">Enviar</button>
-    </form>
-</main>
-<?php require __DIR__ . '/../footer.php'; ?> -->
-
 <?php require __DIR__ . '/../header.php'; ?>
-
 
 <main>
     <div class="container">
@@ -41,7 +27,7 @@ editar
                             </div>
                             <div class="mb-3">
                                 <label for="phone" class="form-label">Telefone</label>
-                                <input type="tel" name="phone" id="phone" class="form-control" value="<?php echo $contact->telefone ?>">
+                                <input type="text" name="phone" id="phone" class="form-control" minlength="14" maxlength="15" placeholder="(99) 99999-9999" value="<?php echo $contact->telefone ?>">
                             </div>
                         </form>
                     </div>
