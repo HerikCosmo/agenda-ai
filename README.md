@@ -16,9 +16,7 @@
   </a>
 
   <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen">
-   <a href="https://github.com/HerikCosmo/agenda-ai/stargazers">
-    <img alt="Stargazers" src="https://img.shields.io/github/stars/HerikCosmo/agenda-ai?style=social">
-  </a>
+
 </p>
 
 
