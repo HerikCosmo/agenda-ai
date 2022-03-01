@@ -31,12 +31,8 @@ Projeto desenvolvido com PHP, utilizando a estrutura MVC.
 
 ### Web
 
-<p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
+<p align="center" style="display: flex; align-items: flex-start; justify-content: space-around;">
   <img alt="AgendaAiWeb" title="#AgendaAiWeb" src="./assets/web.png" width="400px">
-</p>
-
-### Tela de Login
-<p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
   <img alt="AgendaAiLogin" title="#AgendaAiLogin" src="./assets/login.png" width="400px">
 </p>
 
