@@ -53,7 +53,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - PHP 7.4.27 instalado
 - Composer instalado
 
-### 🎲 Rodando a aplicação
+### Baixando o repositório
 
 ```bash
 # Clone este repositório
@@ -65,11 +65,27 @@ $ cd agenda-ai
 # Instale as dependências
 $ composer i
 
+```
+
+### Carregando as variáveis de ambiente
+
+- Crie um arquivo `.env` a partir do arquivo `.env.example`
+- Insira as informações sensíveis
+
+### Criando o Banco de dados
+
+- Crie um banco de dados com o nome escolhido. Por padrão: `agenda_contatos`
+- Execute a query disponível em `query.sql`
+
+### Rodando a aplicação
+
+```bash
 # Execute a aplicação
 $ php -S localhost:8000 -t public
 
 # O servidor inciará na porta:8000 - acesse http://localhost:8000
 ```
+
 
 ## 📝 Licença
 
