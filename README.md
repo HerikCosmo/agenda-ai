@@ -77,6 +77,8 @@ Este projeto esta sobe a licença MIT.
 
 Feito por [Herik Cosmo](https://www.linkedin.com/in/herik-martins-3194b4208/)
 
+README.md baseado em: [Ecoleta](https://github.com/tgmarinho/Ecoleta/blob/master/README.md)
+
 [php]: https://www.php.net/
 [composer]: https://getcomposer.org/
 [bootstrap]: https://getbootstrap.com/
