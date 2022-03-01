@@ -19,7 +19,7 @@
                             <input type="hidden" name="id" value="<?php echo $contact->id ?>">
                             <div class="mb-3">
                                 <label for="name" class="form-label">Nome</label>
-                                <input type="text" class="form-control" id="name" name="name" value="<?php echo $contact->nome ?>">
+                                <input type="text" class="form-control" id="name" name="name" value="<?php echo $contact->nome ?>" required>
                             </div>
                             <div class="mb-3">
                                 <label for="email" class="form-label">Email</label>
