@@ -17,8 +17,14 @@ editar
 <main>
     <div class="container">
         <div class="row justify-content-center align-items-center">
-            <div class="col-md-6">
-                <div class="card bg-light mt-5">
+            <div class="col-md-6 pt-5">
+                <?php if (isset($_SESSION['ALERT'])) : ?>
+                    <div class="alert alert-<?php echo $_SESSION['ALERT']['bg'] ?> my-2">
+                        <?php echo $_SESSION['ALERT']['message'] ?>
+                    </div>
+                <?php unset($_SESSION['ALERT']);
+                endif; ?>
+                <div class="card bg-light">
                     <div class="card-header">
                         <h4>Editar contato</h4>
                     </div>

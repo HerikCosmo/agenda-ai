@@ -82,6 +82,43 @@ class Contact
         }
     }
 
+    public function selectByEmail()
+    {
+        try {
+            $query = "SELECT * FROM contatos where email = :email and id_usuario = :id_usuario";
+
+            $stmt = $this->connection->prepare($query);
+            $stmt->bindValue(":email", $this->email);
+            $stmt->bindValue(":id_usuario", $this->id_usuario);
+
+            $stmt->execute();
+
+            return $stmt->fetch(\PDO::FETCH_OBJ);
+        } catch (\PDOException $e) {
+            echo $e->getMessage();
+            exit;
+        }
+    }
+
+    public function selectByEmailAndId()
+    {
+        try {
+            $query = "SELECT * FROM contatos where email = :email and id <> :id and id_usuario = :id_usuario";
+
+            $stmt = $this->connection->prepare($query);
+            $stmt->bindValue(":email", $this->email);
+            $stmt->bindValue(":id", $this->id);
+            $stmt->bindValue(":id_usuario", $this->id_usuario);
+
+            $stmt->execute();
+
+            return $stmt->fetch(\PDO::FETCH_OBJ);
+        } catch (\PDOException $e) {
+            echo $e->getMessage();
+            exit;
+        }
+    }
+
     public function update()
     {
         try {

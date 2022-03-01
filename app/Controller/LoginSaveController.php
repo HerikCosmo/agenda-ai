@@ -27,7 +27,7 @@ class LoginSaveController implements HandleInterface
 
         if(!empty($user->selectEmail())){
             $_SESSION['ALERT'] = ['message' => "Já existe um usuário com o email informado. Por favor, faça login.", 'bg' => 'danger'];
-            header('location: login');
+            header('location: /login');
             exit;
         }
         
