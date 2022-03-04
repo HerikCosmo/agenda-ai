@@ -3,7 +3,7 @@
 </h1>
 
 <h4 align="center"> 
-	🚧 AgendaAí 1.0 - em construção... 🚧
+	AgendaAí 1.0
 </h4>
 
 <p align="center">
